@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>What Makes Anomaly Detection in CPS So Challenging?</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 0 1rem;
+      color: #2c3e50;
+      background-color: #ffffff;
+    }
+    h1 {
+      color: #2980b9;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>What Makes Anomaly Detection in CPS So Challenging?</h1>
+  <p><em>By Dr. Yaa Acquaah</em></p>
+
+  <p>
+    Cyber-Physical Systems (CPS) are critical to modern infrastructure — from energy grids to water systems. But they also present a unique challenge for anomaly detection because they blend complex physical processes with digital control and communication.
+  </p>
+
+  <h2>1. Unstable Baselines and High Variability</h2>
+  <p>
+    CPS are dynamic by design. Sensor readings vary with time, temperature, flow rates, and user demand — so “normal” isn’t static. This makes traditional anomaly detection techniques prone to false positives.
+  </p>
+
+  <h2>2. Limited Real-World Attack Data</h2>
+  <p>
+    Collecting real cyberattack data from live CPS environments is rare due to safety and confidentiality concerns. As a result, supervised models lack labeled data, and even unsupervised approaches suffer from poorly representative training sets.
+  </p>
+
+  <h2>3. Sensor Noise vs. True Threats</h2>
+  <p>
+    Distinguishing between a failing sensor and a real cyber-attack is tricky. Both produce strange data — but only one is malicious. Without robust feature engineering and signal processing, models may misclassify these events.
+  </p>
+
+  <h2>4. Cross-Site Generalization is Hard</h2>
+  <p>
+    Models trained on one system don’t always work well on another. For example, anomaly patterns in a gas pipeline system may differ entirely from those in a water distribution network. Cross-domain learning and transferability are active research areas.
+  </p>
+
+  <h2>5. Real-Time Requirements</h2>
+  <p>
+    CPS anomalies can cause damage quickly. Detection models must not only be accurate but also fast. Real-time streaming, edge deployment, and model interpretability are vital concerns for production systems.
+  </p>
+
+  <h2>My Work</h2>
+  <p>
+    I focus on addressing these challenges by:
+    <ul>
+      <li>Using Generative Adversarial Networks (GANs) to create synthetic CPS datasets</li>
+      <li>Exploring ensemble methods for more robust anomaly classification</li>
+      <li>Applying mutual information and domain adaptation techniques to improve generalization</li>
+      <li>Evaluating detection accuracy, latency, and model transparency</li>
+    </ul>
+  </p>
+
+  <p>
+    The future of CPS security lies in combining resilient data generation, smart models, and real-world validation. I’m excited to contribute to that future.
+  </p>
+
+  <p>
+    <a href="../index.html">← Back to Portfolio</a>
+  </p>
+
+  <footer>
+    &copy; Dr. Yaa Acquaah | Blog
+  </footer>
+
+</body>
+</html>
