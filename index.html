@@ -57,6 +57,12 @@
     <h1>Yaa Takyiwaa Acquaah, PhD</h1>
     <p>PhD | Data Scientist | Research Scientist</p>
   </header>
+  <div style="background-color: #ecf0f1; padding: 2rem 1rem; text-align: center;">
+  <h2 style="margin-top: 0; color: #2c3e50;">Driving Innovation in CPS & AI</h2>
+  <p style="font-size: 1.1rem; font-weight: 500; color: #34495e;">
+    Postdoctoral Scholar applying advanced machine learning and synthetic data generation to secure cyber-physical systems to drive real-world impact.
+  </p>
+</div>
 
   <main>
     <section>
@@ -86,44 +92,6 @@
         <li><strong>Image-Based Human Action Recognition with Transfer Learning Using Grad-CAM for Visualization</strong> – <em>IFIP AI Applications Conference, 2024</em></li>
       </ul>
     </section>
-
- <section>
-  <h2>Projects</h2>
-  <ul>
-    <li>
-      <strong>Occupancy Detection for Smart HVAC Efficiency in Building Energy</strong><br>
-      Developed a deep learning neural network framework using thermal imagery for energy-efficient HVAC control. Presented at the 2020 AIPR Conference.
-    </li>
-    <li>
-      <strong>Intelligent Text Extraction from Scientific Articles</strong><br>
-      Built a smart parsing application for extracting structured data from unstructured research articles, funded by NSF, ARL, and ERC grants.
-    </li>
-    <li>
-      <strong>Affordable Infrared Fever Detection Systems</strong><br>
-      Designed low-cost, non-invasive fever screening systems for deployment in educational institutions. Sponsored by NCDEQ and UNC Policy Collaboratory.
-    </li>
-    <li>
-      <strong>COVID-19 Infections and Deaths Analysis Based on Food Access and Health Issues</strong><br>
-      Performed regression and spatial analysis for public health insights. Sponsored by NCDEQ.
-    </li>
-    <li>
-      <strong>Bicyclist and Pedestrian Crash Modeling</strong><br>
-      Developed multinomial logistic and ordinal models to analyze crash data across North Carolina regions. Presented at TRB 2020.
-    </li>
-    <li>
-      <strong>Statistical Analysis of Paratransit Travel Time Discrepancies</strong><br>
-      Analyzed and modeled rural paratransit performance metrics to inform operational improvements.
-    </li>
-    <li>
-      <strong>Anomaly Detection in Cyber-Physical Systems</strong><br>
-      Developed ensemble models for cyber attack detection.
-    </li>
-    <li>
-      <strong>Human Action Recognition with Transfer Learning</strong><br>
-      Built an image-based action classification system using CNNs and Grad-CAM visualization for interpretability.
-    </li>
-  </ul>
-</section>
 
     <section>
   <h2>Projects</h2>
@@ -168,18 +136,22 @@
     <p><strong>Problem:</strong> Building HVAC systems waste energy due to lack of real-time occupancy data.</p>
     <p><strong>Solution:</strong> Developed a deep learning model using thermal imagery to detect occupancy and optimize HVAC usage.</p>
     <p><strong>Tech Stack:</strong> Python, OpenCV, CNNs, thermal sensors</p>
-    <p><strong>Impact:</strong> Improved energy efficiency; accepted for oral presentation at IEEE AIPR 2020.</p>
+    <p><strong>Impact:</strong> Improved energy efficiency; Deployed in the HVAC Lab at the Graham Hall of NCAT; accepted for oral presentation at IEEE AIPR 2020 and conference paper published.</p>
     <p><strong>Links:</strong> <a href="https://github.com/Yaa-A/hvac-occupancy">GitHub</a></p>
   </div>
 
-  <button class="accordion">COVID-19 Fever Detection System</button>
-  <div class="panel">
-    <p><strong>Problem:</strong> Schools and public spaces needed fast, contactless fever detection during COVID-19.</p>
-    <p><strong>Solution:</strong> Built a low-cost infrared thermal imaging system for mass fever screening.</p>
-    <p><strong>Tech Stack:</strong> Raspberry Pi, Python, OpenCV, thermal cameras</p>
-    <p><strong>Impact:</strong> Deployed in educational facilities; featured in Fox 5 Atlanta.</p>
-    <p><strong>Links:</strong> <a href="https://www.fox5atlanta.com/news/pandemic-inspires-innovating-covid-19-inventions-across-us.amp" target="_blank">Media Coverage</a></p>
-  </div>
+ <button class="accordion">COVID-19 Fever Detection System</button>
+<div class="panel">
+  <p><strong>Problem:</strong> Schools and public spaces needed fast, contactless fever detection during COVID-19.</p>
+  <p><strong>Solution:</strong> Built a low-cost infrared thermal imaging system for mass fever screening.</p>
+  <p><strong>Tech Stack:</strong> Raspberry Pi, Python, OpenCV, thermal cameras</p>
+  <p><strong>Impact:</strong> Deployed in the Artificial Intelligence and Visualization Lab at NCAT; featured in Fox 5 Atlanta, Fox 8 Greensboro, and PBS North Carolina.</p>
+  <p><strong>Links:</strong><br>
+    <a href="https://www.fox5atlanta.com/news/pandemic-inspires-innovating-covid-19-inventions-across-us.amp" target="_blank">Fox 5 Atlanta</a><br>
+    <a href="https://myfox8.com/news/coronavirus/coronavirus-research/n-c-at-students-create-fever-detection-system/" target="_blank">Fox 8 Greensboro</a><br>
+    <a href="https://www.pbsnc.org/watch/unc-tv-science/ncat-fever-detection/" target="_blank">PBS North Carolina</a>
+  </p>
+</div>
 
   <button class="accordion">GANs for CPS Security</button>
   <div class="panel">
@@ -190,20 +162,21 @@
     <p><strong>Links:</strong> <a href="https://github.com/Yaa-A/cps-gan-research">GitHub</a></p>
   </div>
 
-  <button class="accordion">Scientific Text Extraction</button>
-  <div class="panel">
-    <p><strong>Problem:</strong> Extracting structured metadata from scientific articles is labor-intensive.</p>
-    <p><strong>Solution:</strong> Built an NLP pipeline for extracting citations, affiliations, and keywords from academic PDFs.</p>
-    <p><strong>Tech Stack:</strong> Python, spaCy, PDFMiner, regex</p>
-    <p><strong>Impact:</strong> Supported NSF and ARL projects; streamlined metadata extraction for grant reporting.</p>
-    <p><strong>Links:</strong> <a href="https://github.com/Yaa-A/text-extraction">GitHub</a></p>
-  </div>
+ <button class="accordion">Scientific Text Extraction</button>
+<div class="panel">
+  <p><strong>Problem:</strong> Extracting structured metadata from scientific articles is labor-intensive and error-prone when done manually.</p>
+  <p><strong>Solution:</strong> Built a natural language processing (NLP) pipeline and developed a graphical user interface (GUI) application to extract citations, affiliations, and keywords from academic PDFs with high accuracy.</p>
+  <p><strong>Tech Stack:</strong> Python, Fuzzy wuzzy, regex, Tkinter (GUI)</p>
+  <p><strong>Impact:</strong> Deployed for researchers under the NSF Engineering Research Center (ERC) for Revolutionizing Metallic Biomaterials; streamlined metadata extraction for NSF and ARL grant reporting.</p>
+  <p><strong>Links:</strong> <a href="https://github.com/Yaa-A/text-extraction">GitHub</a></p>
+</div>
+
 
   <button class="accordion">Ensemble Methods for Attack Detection</button>
   <div class="panel">
     <p><strong>Problem:</strong> CPS face evolving attacks that evade single-model detection.</p>
     <p><strong>Solution:</strong> Designed an ensemble framework combining ML models and feature selection for robust detection.</p>
-    <p><strong>Tech Stack:</strong> XGBoost, Random Forest, PCA, Mutual Info, Python</p>
+    <p><strong>Tech Stack:</strong> XGBoost, Random Forest, PCA, Python</p>
     <p><strong>Impact:</strong> Achieved high detection accuracy in multi-domain CPS attack scenarios.</p>
     <p><strong>Links:</strong> <a href="https://github.com/Yaa-A/cps-ensemble">GitHub</a></p>
   </div>
@@ -241,12 +214,25 @@
   <ul>
     <li>National Science Foundation (NSF)</li>
     <li>NSF Engineering Research Center for Revolutionizing Metallic Biomaterials (ERC 0812348)</li>
-    <li>NSF CMMI (Grant 2026313)</li>
-    <li>Army Research Laboratory (ARL) – PRI Program (W911NF-12-2-0022)</li>
+    <li>NSF CMMI</li>
+    <li>Army Research Laboratory (ARL) – PRI Program</li>
     <li>North Carolina Department of Environmental Quality (NCDEQ)</li>
     <li>UNC Policy Collaboratory</li>
     <li>Center for Energy Research and Technology (CERT)</li>
     <li>North Carolina Department of Transportation (NCDOT)</li>
+  </ul>
+</section>
+<section>
+  <h2>Achievements & Impact</h2>
+  <ul>
+    <li>
+      <strong>COVID-19 Fever Detection System Featured in National Media</strong><br>
+      Designed a low-cost, non-invasive infrared fever detection system during the COVID-19 pandemic. Recognized for innovation and public health contribution.<br>
+      <strong>Media Coverage:</strong><br>
+      <a href="https://www.fox5atlanta.com/news/pandemic-inspires-innovating-covid-19-inventions-across-us.amp" target="_blank">Fox 5 Atlanta</a> |
+      <a href="https://myfox8.com/news/nc-at-faculty-students-develop-low-cost-fever-detection-equipment-to-help-fight-the-spread-of-covid-19/" target="_blank">FOX8 WGHP</a> |
+      <a href="https://www.pbs.org/video/nc-t-develops-affordable-fever-detection-system-e2swyt/" target="_blank">PBS NC</a>
+    </li>
   </ul>
 </section>
     
@@ -264,8 +250,10 @@
       <p>
         📧 Email: <a href="mailto:ytacquaah@gmail.com">ytacquaah@gmail.com</a><br>
         🐙 GitHub: <a href="https://github.com/Yaa-A">github.com/Yaa-A</a><br>
-       🧑‍💼 LinkedIn: <a href="https://www.linkedin.com/in/yaa-acquaah-ph-d-474564184">linkedin.com/in/yaa-acquaah-ph-d-474564184</a><br>
+        🧑‍💼 LinkedIn: <a href="https://www.linkedin.com/in/yaa-acquaah-ph-d-474564184">linkedin.com/in/yaa-acquaah-ph-d-474564184</a><br>
         📝 CV: <a href="Yaa%20Acquaah_Resume.pdf" target="_blank">Download CV</a>
+        📚 Google Scholar: <a href="https://scholar.google.com/citations?hl=en&user=7TGhkYIAAAAJ" target="_blank">scholar.google.com</a><br>
+        🆔 ORCID: <a href="https://orcid.org/0009-0005-0473-4751" target="_blank">orcid.org/0009-0005-0473-4751</a>
 
       </p>
     </section>
