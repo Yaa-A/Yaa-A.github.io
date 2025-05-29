@@ -3,273 +3,124 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Yaa Acquaah, PhD | Data Scientist & Postdoctoral Scholar</title>
+  <title>Yaa Takyiwaa Acquaah, PhD | Home</title>
   <link rel="icon" type="image/png" href="favicon.png" />
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #ffffff;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
       color: #2c3e50;
     }
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 2rem;
-      text-align: center;
+    nav {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
     }
-    header img {
+    nav a {
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #2980b9;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+    }
+    .sidebar {
+      flex: 1;
+      min-width: 250px;
+      text-align: center;
+      padding: 2rem;
+      background-color: #ecf0f1;
+    }
+    .sidebar img {
       width: 150px;
+      height: 150px;
       border-radius: 50%;
       margin-bottom: 1rem;
     }
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+    .sidebar h2 {
+      font-size: 1.25rem;
     }
-    section {
-      margin-bottom: 2rem;
-    }
-    h2 {
-      border-bottom: 2px solid #2980b9;
-      padding-bottom: 0.3rem;
-    }
-    ul li {
-      margin-bottom: 0.5rem;
-    }
-    a {
+    .sidebar a {
+      display: block;
+      margin: 0.5rem 0;
       color: #2980b9;
       text-decoration: none;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
+    }
+    .main-content {
+      flex: 3;
+      padding: 2rem;
+    }
+    .main-content h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .main-content p {
+      line-height: 1.6;
     }
     footer {
       text-align: center;
       padding: 2rem;
       background: #ecf0f1;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="profile.jpg" alt="Yaa Takyiwaa Acquaah, PhD">
-    <h1>Yaa Takyiwaa Acquaah, PhD</h1>
-    <p>PhD | Data Scientist | Research Scientist</p>
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="Yaa%20Acquaah_Resume.pdf" target="_blank">CURRICULUM VITAE</a>
+    <a href="publications.html">PUBLICATIONS</a>
+    <a href="blogs.html">BLOGS</a>
+    <a href="presentations.html">PRESENTATIONS</a>
+    <a href="software.html">SOFTWARE</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="projects.html">PROJECTS</a>
+  </nav>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="profile.jpg" alt="Profile Picture">
+      <h2>Yaa Takyiwaa Acquaah, <strong>PhD</strong></h2>
+      <a href="mailto:ytacquaah@gmail.com">Email</a>
+      <a href="https://scholar.google.com/citations?hl=en&user=7TGhkYIAAAAJ" target="_blank">Google Scholar</a>
+      <a href="https://github.com/Yaa-A" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/yaa-acquaah-ph-d-474564184" target="_blank">LinkedIn</a>
+      <a href="https://orcid.org/0009-0005-0473-4751" target="_blank">ORCID</a>
+    </aside>
+
+    <section class="main-content">
+      <h1>Yaa Takyiwaa Acquaah, <strong>PhD</strong></h1>
       <p>
-        I hold a PhD in Computational Science and Engineering from North Carolina Agricultural and Technical State University (NCAT) and specialize in data science, machine learning, and research-driven problem solving. 
-        Currently a Postdoctoral Scholar at the Cyber Defense Lab of NCAT, applying advanced machine learning and synthetic data generation to address the scarcity of cyber-physical systems(CPS) datasets and enhance the security and resilience of CPS in real-world applications.
-        My work bridges theory and real-world application, with experience across academia and industry.
+        I am a Postdoctoral Researcher in the Department of Computer Science at North Carolina Agricultural and Technical State (NCAT) University. I mentor undergraduate, master's, and Ph.D. students, and our research focuses on various aspects of cybersecurity in cyber-physical systems. My expertise lies in developing statistical and machine learning methods for real-world applications.
+      </p>
+      <p>
+        During my academic career, I held data science internships at the North Carolina Department of Transportation (NCDOT) and Vanguard. At NCDOT, I analyzed bicyclist crash data over time to identify high-risk hotspots. At Vanguard, I developed statistical models for predicting the Owner’s Equivalent Rent (OER). I earned my Ph.D. in Computational Science and Engineering from NCAT, where I focused on HVAC automation developing methods for thermal preference estimation and occupancy detection using thermal images and environmental sensors.
+      </p>
+      <p>
+        My research interests include machine learning and artificial intelligence, particularly in adapting models for deployment in practical settings. For example, we customize AI techniques to improve the reliability of cyber-physical systems, tackle cross-domain anomaly detection, and generate synthetic datasets in an increasingly automated and interconnected world.
+      </p>
+      <p>
+        In addition to my research, I actively contribute to the academic community as a peer reviewer. I have reviewed manuscripts for several journals, <strong>including:</strong> Springer Nature: Discover Data, Scientific Reports, Discover Internet of Things, Energy Informatics and MDPI: Sensors, Computers, Electronics, Applied Sciences, Algorithms, Big Data and Cognitive Computing, Symmetry, Future Internet, Forests, and Information.
       </p>
     </section>
-
-    <section>
-      <h2>Research & Publications</h2>
-      <ul>
-        <li><strong>Normal-only Anomaly detection in environmental sensors in CPS: A comprehensive review</strong> – <em>IEEE Access, 2024</em></li>
-        <li><strong>Occupancy and thermal preference-based HVAC control strategy using multisensor network</strong> – <em>IEEE Sensors Journal, 2023</em></li>
-        <li><strong>Occupancy detection for smart HVAC efficiency in building energy: a deep learning neural network framework using thermal imagery</strong> – <em>IEEE AIPR Workshop, 2020</em></li>
-        <li><strong>Thermal imagery feature extraction techniques and the effects on machine learning models for smart HVAC efficiency in building energy</strong> – <em>Remote Sensing, 2021</em></li>
-        <li><strong>Exploration of Ensemble Methods for Cyber Attack Detection in Cyber-Physical Systems</strong> – <em>IFIP AI Applications Conference, 2024</em></li>
-        <li><strong>Machine learning techniques to predict real-time thermal comfort, preference, acceptability, and sensation for automation of HVAC temperature</strong> – <em>IEA/AIE Conference, 2022</em></li>
-        <li><strong>Intelligent AI Techniques for Building Energy and Human Comfort Optimization Using Smart Sensor Network and Thermal Imagery</strong> – <em>North Carolina A&T State University, Dissertation</em></li>
-        <li><strong>Review of HVAC systems history and future applications</strong> – <em>Energies, 2023</em></li>
-        <li><strong>Regression analysis for COVID-19 infections and deaths based on food access and health issues</strong> – <em>Healthcare, 2022</em></li>
-        <li><strong>Explainable AI for cyber-physical systems: Issues and challenges</strong> – <em>IEEE Access, 2024</em></li>
-        <li><strong>Non-invasive low cost fever detection systems</strong> – <em>IEEE SoutheastCon, 2021</em></li>
-        <li><strong>DDoS in SDN: a review of open datasets, attack vectors and mitigation strategies</strong> – <em>Discover Applied Sciences, 2024</em></li>
-        <li><strong>Anomaly Detection in Cyber-Physical Systems Based on Genetic Algorithm with Dynamic Thresholding Detection</strong> – <em>AI, Big Data Conference, 2024</em></li>
-        <li><strong>Image-Based Human Action Recognition with Transfer Learning Using Grad-CAM for Visualization</strong> – <em>IFIP AI Applications Conference, 2024</em></li>
-      </ul>
-    </section>
-
-    <section>
-  <h2>Projects</h2>
-  <style>
-    .accordion {
-      background-color: #ecf0f1;
-      color: #2c3e50;
-      cursor: pointer;
-      padding: 14px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 16px;
-      transition: 0.3s;
-      margin-bottom: 5px;
-    }
-
-    .accordion.active, .accordion:hover {
-      background-color: #2980b9;
-      color: white;
-    }
-
-    .panel {
-      padding: 0 18px;
-      background-color: #f9f9f9;
-      display: none;
-      overflow: hidden;
-      border-left: 2px solid #2980b9;
-      border-right: 2px solid #2980b9;
-      border-bottom: 2px solid #2980b9;
-      margin-bottom: 1rem;
-    }
-
-    .panel p {
-      margin: 1rem 0;
-    }
-  </style>
-
-  <button class="accordion">HVAC Occupancy Detection</button>
-  <div class="panel">
-    <p><strong>Problem:</strong> Building HVAC systems waste energy due to lack of real-time occupancy data.</p>
-    <p><strong>Solution:</strong> Developed a deep learning model using thermal imagery to detect occupancy and optimize HVAC usage.</p>
-    <p><strong>Tech Stack:</strong> Python, OpenCV, CNNs, thermal sensors</p>
-    <p><strong>Impact:</strong> Improved energy efficiency; Deployed in the HVAC Lab at the Graham Hall of NCAT; accepted for oral presentation at IEEE AIPR 2020 and conference paper published.</p>
-    <p><strong>Links:</strong> <a href="https://github.com/Yaa-A/hvac-occupancy">GitHub</a></p>
   </div>
-
- <button class="accordion">COVID-19 Fever Detection System</button>
-<div class="panel">
-  <p><strong>Problem:</strong> Schools and public spaces needed fast, contactless fever detection during COVID-19.</p>
-  <p><strong>Solution:</strong> Worked with a team to build a low-cost infrared thermal imaging system for mass fever screening.</p>
-  <p><strong>Tech Stack:</strong> Raspberry Pi, Python, OpenCV, thermal cameras</p>
-  <p><strong>Impact:</strong> Deployed in the Artificial Intelligence and Visualization Lab at NCAT; featured in Fox 5 Atlanta, Fox 8 Greensboro, and PBS North Carolina.</p>
-  <p><strong>Links:</strong><br>
-    <a href="https://www.fox5atlanta.com/news/pandemic-inspires-innovating-covid-19-inventions-across-us.amp" target="_blank">Fox 5 Atlanta</a><br>
-    <a href="https://myfox8.com/news/coronavirus/coronavirus-research/n-c-at-students-create-fever-detection-system/" target="_blank">Fox 8 Greensboro</a><br>
-    <a href="https://www.pbsnc.org/watch/unc-tv-science/ncat-fever-detection/" target="_blank">PBS North Carolina</a>
-  </p>
-</div>
-
-  <button class="accordion">GANs for CPS Security</button>
-  <div class="panel">
-    <p><strong>Problem:</strong> Real-world CPS attack datasets are limited and lack variability.</p>
-    <p><strong>Solution:</strong> Created synthetic datasets using GANs and explored LLM-based pattern generation for anomaly detection.</p>
-    <p><strong>Tech Stack:</strong> PyTorch, GANs, scikit-learn, LLM fine-tuning</p>
-    <p><strong>Impact:</strong> Enhanced detection rates and improved model generalization across domains.</p>
-    <p><strong>Links:</strong> <a href="https://github.com/Yaa-A/cps-gan-research">GitHub</a></p>
-  </div>
-
- <button class="accordion">Scientific Text Extraction</button>
-<div class="panel">
-  <p><strong>Problem:</strong> Extracting structured metadata from scientific articles is labor-intensive and error-prone when done manually.</p>
-  <p><strong>Solution:</strong> Built a natural language processing (NLP) pipeline and developed a graphical user interface (GUI) application to extract citations, affiliations, and keywords from academic PDFs with high accuracy.</p>
-  <p><strong>Tech Stack:</strong> Python, Fuzzy wuzzy, regex, Tkinter (GUI)</p>
-  <p><strong>Impact:</strong> Deployed for researchers under the NSF Engineering Research Center (ERC) for Revolutionizing Metallic Biomaterials; streamlined metadata extraction for NSF and ARL grant reporting.</p>
-  <p><strong>Links:</strong> <a href="https://github.com/Yaa-A/text-extraction">GitHub</a></p>
-</div>
-
-
-  <button class="accordion">Ensemble Methods for Attack Detection</button>
-  <div class="panel">
-    <p><strong>Problem:</strong> CPS face evolving attacks that evade single-model detection.</p>
-    <p><strong>Solution:</strong> Designed an ensemble framework combining ML models and feature selection for robust detection.</p>
-    <p><strong>Tech Stack:</strong> XGBoost, Random Forest, PCA, Python</p>
-    <p><strong>Impact:</strong> Achieved high detection accuracy in multi-domain CPS attack scenarios.</p>
-    <p><strong>Links:</strong> <a href="https://github.com/Yaa-A/cps-ensemble">GitHub</a></p>
-  </div>
-
-  <script>
-    const acc = document.getElementsByClassName("accordion");
-    for (let i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        const panel = this.nextElementSibling;
-        panel.style.display = panel.style.display === "block" ? "none" : "block";
-      });
-    }
-  </script>
-</section>
-
-
-
-   <section>
-  <h2>Skills, Expertise & Tools</h2>
-  <ul>
-    <li>💻 <strong>Programming Languages:</strong> Expert in Python and MATLAB; proficient in R, C/C++, FORTRAN, and Mathematica</li>
-    <li>🗄️ <strong>Databases & Query Languages:</strong> Strong proficiency in SQL</li>
-    <li>🧠 <strong>Machine Learning & AI Frameworks:</strong> scikit-learn, pandas, NumPy, XGBoost, PyTorch, TensorFlow</li>
-    <li>📊 <strong>Data Science & Statistical Analysis:</strong> Deep understanding of statistics, data mining, econometrics, simulation, optimization, operations research, clustering, and classification techniques</li>
-    <li>🛠️ <strong>Tools & Platforms:</strong> RStudio, Jupyter, Git, VS Code, InDesign, ArcGIS/QGIS, Tableau</li>
-    <li>📈 <strong>Modeling & Analytics:</strong> Skilled in regression, scenario analysis, simulation modeling, and decision trees</li>
-    <li>🔬 <strong>Scientific & Technical Computing:</strong> Experience with LaTeX, Mathematica, and numerical computing libraries</li>
-    <li>🗣️ <strong>Productivity & Communication:</strong> Proficient with MS Office Suite, technical writing, and presenting complex concepts to diverse audiences</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Funding & Sponsorships</h2>
-  <ul>
-    <li>National Science Foundation (NSF)</li>
-    <li>Office of Naval Research (ONR)</li>
-    <li>NSF Engineering Research Center for Revolutionizing Metallic Biomaterials</li>
-    <li>NSF CMMI</li>
-    <li>Army Research Laboratory (ARL) – PRI Program</li>
-    <li>North Carolina Department of Environmental Quality (NCDEQ)</li>
-    <li>UNC Policy Collaboratory</li>
-    <li>Center for Energy Research and Technology (CERT)</li>
-    <li>North Carolina Department of Transportation (NCDOT)</li>
-  </ul>
-</section>
-<section>
-  <h2>Achievements & Impact</h2>
-  <ul>
-    <li>
-      <strong>COVID-19 Fever Detection System Featured in National Media</strong><br>
-      Designed a low-cost, non-invasive infrared fever detection system during the COVID-19 pandemic. Recognized for innovation and public health contribution.<br>
-      <strong>Media Coverage:</strong><br>
-      <a href="https://www.fox5atlanta.com/news/pandemic-inspires-innovating-covid-19-inventions-across-us.amp" target="_blank">Fox 5 Atlanta</a> |
-      <a href="https://myfox8.com/news/nc-at-faculty-students-develop-low-cost-fever-detection-equipment-to-help-fight-the-spread-of-covid-19/" target="_blank">FOX8 WGHP</a> |
-      <a href="https://www.pbs.org/video/nc-t-develops-affordable-fever-detection-system-e2swyt/" target="_blank">PBS NC</a>
-    </li>
-  </ul>
-</section>
-    
-<section>
-  <h2>Peer Review Service</h2>
-  <p>I have served as a peer reviewer for the following journals:</p>
-  <ul>
-    <li><strong>Springer Nature:</strong> Discover Data, Scientific Reports, Discover Internet of Things, Energy Informatics</li>
-    <li><strong>MDPI:</strong> Sensors, Computers, Electronics, Applied Sciences, Algorithms, Big Data and Cognitive Computing, Symmetry, Future Internet, Forests, Information</li>
-  </ul>
-</section>
-
-    <section>
-      <h2>Contact</h2>
-      <p>
-        📧 Email: <a href="mailto:ytacquaah@gmail.com">ytacquaah@gmail.com</a><br>
-        🐙 GitHub: <a href="https://github.com/Yaa-A">github.com/Yaa-A</a><br>
-        🧑‍💼 LinkedIn: <a href="https://www.linkedin.com/in/yaa-acquaah-ph-d-474564184">linkedin.com/in/yaa-acquaah-ph-d-474564184</a><br>
-        📝 CV: <a href="Yaa%20Acquaah_Resume.pdf" target="_blank">Download CV</a>
-        📚 Google Scholar: <a href="https://scholar.google.com/citations?hl=en&user=7TGhkYIAAAAJ" target="_blank">scholar.google.com</a><br>
-        🆔 ORCID: <a href="https://orcid.org/0009-0005-0473-4751" target="_blank">orcid.org/0009-0005-0473-4751</a>
-
-      </p>
-    </section>
-    
-  </main><section>
-  <h2>Technical Blog & Insights</h2>
-  <ul>
-    <li>
-      <strong><a href="blog/cps-anomaly-detection.html">What Makes Anomaly Detection in CPS So Challenging?</a></strong><br>
-      Why variability, sensor noise, and limited attack data make this a hard but vital research area.
-    </li>
-    <li>
-      <strong><a href="blog/gan-for-synthetic-data.html">Generating Synthetic CPS Datasets Using DoppelGANger</a></strong><br>
-      How I fine-tuned a GAN to produce realistic attack scenarios across four CPS domains.
-    </li>
-  </ul>
-</section>
-
 
   <footer>
-    <p>© Dr. Yaa Acquaah | Last updated: May 2025</p>
+    <p>&copy; Dr. Yaa Acquaah | Last updated: May 2025</p>
   </footer>
 
 </body>
