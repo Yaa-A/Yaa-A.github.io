@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Yaa Acquaah</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #2c3e50;
+    }
+    header, footer {
+      text-align: center;
+      padding: 1.5rem;
+      background: #ecf0f1;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      border-bottom: 2px solid #2980b9;
+      padding-bottom: 0.3rem;
+    }
+    .accordion {
+      background-color: #ecf0f1;
+      color: #2c3e50;
+      cursor: pointer;
+      padding: 14px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 16px;
+      transition: 0.3s;
+      margin-bottom: 5px;
+    }
+    .accordion.active, .accordion:hover {
+      background-color: #2980b9;
+      color: white;
+    }
+    .panel {
+      padding: 0 18px;
+      background-color: #f9f9f9;
+      display: none;
+      overflow: hidden;
+      border-left: 2px solid #2980b9;
+      border-right: 2px solid #2980b9;
+      border-bottom: 2px solid #2980b9;
+      margin-bottom: 1rem;
+    }
+    .panel p {
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Projects</h1>
+</header>
+
+<main>
+  <h2>Projects</h2>
+
+  <button class="accordion">HVAC Occupancy Detection</button>
+  <div class="panel">
+    <p><strong>Problem:</strong> Building HVAC systems waste energy due to lack of real-time occupancy data.</p>
+    <p><strong>Solution:</strong> Developed a deep learning model using thermal imagery to detect occupancy and optimize HVAC usage.</p>
+    <p><strong>Tech Stack:</strong> Python, OpenCV, CNNs, thermal sensors</p>
+    <p><strong>Impact:</strong> Improved energy efficiency; Deployed in the HVAC Lab at the Graham Hall of NCAT; accepted for oral presentation at IEEE AIPR 2020 and conference paper published.</p>
+    <p><strong>Links:</strong> <a href="https://github.com/Yaa-A/hvac-occupancy">GitHub</a></p>
+  </div>
+
+  <button class="accordion">COVID-19 Fever Detection System</button>
+  <div class="panel">
+    <p><strong>Problem:</strong> Schools and public spaces needed fast, contactless fever detection during COVID-19.</p>
+    <p><strong>Solution:</strong> Worked with a team to build a low-cost infrared thermal imaging system for mass fever screening.</p>
+    <p><strong>Tech Stack:</strong> Raspberry Pi, Python, OpenCV, thermal cameras</p>
+    <p><strong>Impact:</strong> Deployed in the Artificial Intelligence and Visualization Lab at NCAT; featured in Fox 5 Atlanta, Fox 8 Greensboro, and PBS North Carolina.</p>
+    <p><strong>Links:</strong><br>
+      <a href="https://www.fox5atlanta.com/news/pandemic-inspires-innovating-covid-19-inventions-across-us.amp" target="_blank">Fox 5 Atlanta</a><br>
+      <a href="https://myfox8.com/news/coronavirus/coronavirus-research/n-c-at-students-create-fever-detection-system/" target="_blank">Fox 8 Greensboro</a><br>
+      <a href="https://www.pbsnc.org/watch/unc-tv-science/ncat-fever-detection/" target="_blank">PBS North Carolina</a>
+    </p>
+  </div>
+
+  <button class="accordion">GANs for CPS Security</button>
+  <div class="panel">
+    <p><strong>Problem:</strong> Real-world CPS attack datasets are limited and lack variability.</p>
+    <p><strong>Solution:</strong> Created synthetic datasets using GANs and explored LLM-based pattern generation for anomaly detection.</p>
+    <p><strong>Tech Stack:</strong> PyTorch, GANs, scikit-learn, LLM fine-tuning</p>
+    <p><strong>Impact:</strong> Enhanced detection rates and improved model generalization across domains.</p>
+    <p><strong>Links:</strong> <a href="https://github.com/Yaa-A/cps-gan-research">GitHub</a></p>
+  </div>
+
+  <button class="accordion">Scientific Text Extraction</button>
+  <div class="panel">
+    <p><strong>Problem:</strong> Extracting structured metadata from scientific articles is labor-intensive and error-prone when done manually.</p>
+    <p><strong>Solution:</strong> Built a natural language processing (NLP) pipeline and developed a graphical user interface (GUI) application to extract citations, affiliations, and keywords from academic PDFs with high accuracy.</p>
+    <p><strong>Tech Stack:</strong> Python, Fuzzy wuzzy, regex, Tkinter (GUI)</p>
+    <p><strong>Impact:</strong> Deployed for researchers under the NSF Engineering Research Center (ERC) for Revolutionizing Metallic Biomaterials; streamlined metadata extraction for NSF and ARL grant reporting.</p>
+    <p><strong>Links:</strong> <a href="https://github.com/Yaa-A/text-extraction">GitHub</a></p>
+  </div>
+
+  <button class="accordion">Ensemble Methods for Attack Detection</button>
+  <div class="panel">
+    <p><strong>Problem:</strong> CPS face evolving attacks that evade single-model detection.</p>
+    <p><strong>Solution:</strong> Designed an ensemble framework combining ML models and feature selection for robust detection.</p>
+    <p><strong>Tech Stack:</strong> XGBoost, Random Forest, PCA, Python</p>
+    <p><strong>Impact:</strong> Achieved high detection accuracy in multi-domain CPS attack scenarios.</p>
+    <p><strong>Links:</strong> <a href="https://github.com/Yaa-A/cps-ensemble">GitHub</a></p>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; Dr. Yaa Acquaah | Last updated: May 2025</p>
+</footer>
+
+<script>
+  const acc = document.getElementsByClassName("accordion");
+  for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      panel.style.display = panel.style.display === "block" ? "none" : "block";
+    });
+  }
+</script>
+
+</body>
+</html>
